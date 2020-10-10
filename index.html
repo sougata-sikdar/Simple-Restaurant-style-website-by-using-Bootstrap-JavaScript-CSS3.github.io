@@ -1,0 +1,1267 @@
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8"></meta>
+        <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+       
+        <!-- Bootstrap CSS -->
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" rel="stylesheet"></link>
+        <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+        
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+        
+        <!-- ///////////// for aos data link //////////////////////////// -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+             <!-- ////////////////// NewFont Awesome /////////////////// -->
+        <script src="https://kit.fontawesome.com/125a38e03f.js" crossorigin="anonymous"></script>
+        
+        <!-- ////////////////// NewFont Awesome /////////////////// -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+        <!-- jQuery ui library -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>Simple Resturent style website</title>
+    <style type="text/css" media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=PT+Sans&amp;display=swap');
+
+  
+  * {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: 'PT Sans', sans-serif;
+  }
+
+html
+{
+  font-size: 62.5%;
+}
+
+/* ////////////////// jumbotron //////////////// */
+.jumboimg
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('https://lorempixel.com/800/400/food/1');
+  background-size: 100% 100%;
+}
+
+
+/* ///////////////////////  for icon bar/////////////////////// */
+.icon-bar {
+  position         : fixed;
+  top              : 50%;
+  transform        : translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform    : translateY(-50%);
+  z-index          : 10;
+}
+
+.icon-bar a {
+  text-decoration   : none;
+  width             : 210px;
+  background        : #3b5999;
+  color             : #fff;
+  display           : flex;
+  justify-content   : flex-end;
+  align-items       : center;
+  padding           : 5px;
+  font-size         : 20px;
+  transform         : translateX(-170px);
+  -webkit-transform : translateX(-170px);
+  -ms-transform     : translateX(-170px);
+  transition        : all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -ms-transition    : all 0.5s linear;
+}
+.icon-bar.facebook {
+  background: #3b5998;
+}
+
+
+.icon-bar  .twitter {
+  background: #00aced;
+} 
+
+.icon-bar .instagram {
+  background: #e4405f;
+}
+
+.icon-bar .youtube {
+  background: #cd201f;
+}
+
+.icon-bar .linkedin {
+  background: #0077B5;
+}
+
+
+.icon-bar a i {
+  padding-left: 20px;
+  font-size   : 30px !important;
+  animation   : letszoom 2s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.4);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+
+}
+
+.icon-bar a:hover
+ {
+  transform        : translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform    : translateX(0);
+}
+
+@media(max-width:600px)
+{
+  
+    .icon-bar
+    {
+      display: none;
+    }
+
+}
+/* ................. For  Our services  ...................................... */
+.ourservice_1_heading {
+  text-transform: uppercase;
+  position      : relative;
+  }
+
+.ourservice_1_heading:after {
+  content      : '';
+  position     : absolute;
+  top          : 100%;
+  left         : 50%;
+  transform    : translateX(-50%);
+  width        : 0%;
+  height       : auto;
+  border-bottom: 0.3rem solid blue;
+  transition   : all 0.3s linear;
+}
+
+.ourservice_1_heading:hover:after {
+  width: 20%
+}
+
+.ourservice_1 {
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.ourservice_1 h1, .ourservice_1 h2, .ourservice_1 h3, .ourservice_1 h4, .ourservice_1 h5, .ourservice_1 h6 {
+  color: #3e4555;
+}
+
+.ourservice_1 h6 {
+  line-height: 2.2rem;
+  font-size  : 1.8rem;
+  color      : #8d97ad;
+}
+
+.ourservice_1 .font-weight-medium {
+  font-weight: 500;
+  color      : #3e4555;
+  }
+
+.ourservice_1 .badge {
+  line-height: 1.5rem;
+}
+
+.ourservice_1 .badge-info {
+  background: #188ef4;
+}
+
+.ourservice_1 .subtitle {
+  color: #8d97ad;
+  line-height: 2.4rem;
+}
+
+
+.ourservice_1 .img-shadow {
+  box-shadow: 0 0 3.0rem rgba(115, 128, 157, 0.3);
+}
+
+.ourservice_1 .wrap-ourservice_1 .img-hover {
+  transition: all 0.2s ease-in;
+}
+
+.ourservice_1 .wrap-ourservice_1 .img-hover:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform    : scale(1.1);
+  transform        : scale(1.1);
+}
+
+.ourservice_1 .wrap-ourservice_1 .uneven-box {
+  margin-top: 10.0rem;
+}
+
+.ourservice_1 .btn-sm {
+  padding   : .6rem 1.4rem;
+  font-size : 1.6rem;
+  background: #188ef4;
+}
+
+.ourservice_1 .btn-sm:hover {
+  color     : #188ef4;
+  background: #fff;
+  border    : .1rem solid #188ef4;
+}
+
+@media(max-width:700px)
+{
+  .ourservice_1 .wrap-ourservice_1 .uneven-box 
+  {
+    margin-top: 1.0rem;
+  }
+
+  html
+  {
+    font-size: 56%;
+  }
+
+/* ................................... */
+/* .icon-bar
+{
+  display: none;
+} */
+
+
+}
+/* ......................................////////  For Footer   //////////.................. */
+
+   header{ width: 100%; height: 300px; background: #d2dae2;}
+
+   .footer_style{
+   background   : #2c2c54; color: white;
+  }
+
+ .footer_style a{
+   text-decoration: none;
+   color          : white;
+  }
+
+  .footer_style a:hover{ text-decoration: none; color: #4bcffa; }
+
+  .footer_style .d-flex div{
+    text-align  : center;
+    border-right: .1rem solid grey;
+    border-top  : .1rem solid grey;
+  }
+
+   .footer_style .d-flex div:last-child{
+   border-right:none;
+  }
+
+  @media(max-width: 768px){
+  .footer_style li{
+    list-style: none;
+   }
+
+  .footer_style .d-flex span{
+    display: none;
+   }
+  }
+
+/* ///////////////////////////////////////////////////// */
+.love_heart
+{
+  color: white;
+}
+
+.hey
+{
+  position: relative;
+}
+.hey1
+{
+  width           : 40%;
+  height          : 50px;
+  background-color: #fff;
+  margin-top      : 0;
+  position        : absolute;
+  left            : 50%;
+  right           : 50%;
+  transform       : translate(-50%, -50%);
+  border-radius   : 100%;
+}
+/* ..............................//////................ */
+
+
+/* /////////////////// Fiy Text area /////// */
+    .flybody
+    {
+          background-image: linear-gradient(to top,#4f4c4c , #d32626);
+          width           : 112rem;
+          height          : 16rem;
+          
+          display         : grid;
+          place-items     : center;
+          align-items     : center;
+          border-radius   : 15%;
+          }
+   
+    ul
+    {
+      list-style : none;
+      font-size  : 5rem;
+      font-weight: bold;
+      color      : #fff;
+
+    }
+.fly li
+    {
+        margin-right: 8rem;
+        display     : inline-block;
+        opacity     : 1;
+        transition  : all 35.5s ease;
+
+    }
+
+    
+    .fly.hidden li:nth-child(1) { transform: translateX(7.0rem) translateY(5rem);}
+    .fly.hidden li:nth-child(2) {transform: translateX(-8.3rem) translateY(-5rem);}
+    .fly.hidden li:nth-child(3) {transform: translateX(7rem) translateY(-4rem);}
+    .fly.hidden li:nth-child(4) {transform: translateX(-2.0rem) translateY(5rem);}
+    .fly.hidden li:nth-child(5) {transform: translateX(-7.2rem) translateY(-5.2rem);}
+    .fly.hidden li:nth-child(6) {transform: translateX(6.5rem) translateY(4.5rem);}
+    .fly.hidden li:nth-child(7) {transform: translateX(5.2rem) translateY(-1.8rem);}
+
+
+/* /////////////// Zoom image3 ////////////////// */
+
+.zoomimage
+    {
+      position  : relative;
+      width     : 35rem;
+      margin    : auto;
+      margin-top: 5.0rem;
+      padding   : 0rem;
+      
+    }
+
+    .zoomimage img
+    {
+      display: block;
+      width  : 100%;
+      height : 25rem;
+
+
+    }
+
+    .zoomimage .overlay
+    {
+       position          : absolute;
+       bottom            : 0;
+       left              : 0;right: 0;
+       background-image  : linear-gradient(to right,#5959f2 , red);
+       
+       overflow          : hidden;
+       width             : 100%;
+       height            : 100%;
+       -webkit-transform : scale(0);
+       -ms-transform     : scale(0);
+       transform         : scale(0);
+       -webkit-transition: 1.9s ease;
+       transition        : 1.9s ease;
+       -ms-transition    : 1.9s ease;
+
+    }
+
+    .zoomimage:hover .overlay
+    {
+      -webkit-transform: scale(1);
+      -ms-transform    : scale(1);
+      transform        : scale(1);
+      
+
+    }
+
+    .zoomimage .text
+    {
+      color         : white;
+      font-size     : 2rem;
+      position      : absolute;
+      left          : 50%;
+      top           : 50%;
+      transform     : translate(-50%);
+      font-weight   : bold;
+      letter-spacing: .3rem;
+
+
+      }
+    @media(max-width: 998px)
+    {
+      html
+      {
+        font-size: 40%;
+      }
+    }
+
+
+    @media(max-width: 700px)
+    {
+      html
+      {
+        font-size: 30%;
+      }
+
+      /* //////////////// set icon vertically /////////////////// */
+      .emojidiv
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 7rem;
+      }
+
+      /* ///////////// for fly text for small device /////////// */
+
+               
+                  ul
+                  {
+                  
+                  font-size  : 4rem;
+                  font-weight: bold;
+                 
+                  
+                  }
+                  .fly li
+                  {
+                  margin-right: 5rem;
+                  
+                  transition  : all 30.5s ease;
+                  
+                  }
+                  
+                  
+                  .fly.hidden li:nth-child(1) { transform: translateX(4.0rem) translateY(3rem);}
+                  .fly.hidden li:nth-child(2) {transform: translateX(-6.3rem) translateY(-5rem);}
+                  .fly.hidden li:nth-child(3) {transform: translateX(4rem) translateY(-4rem);}
+                  .fly.hidden li:nth-child(4) {transform: translateX(-2.0rem) translateY(5rem);}
+                  .fly.hidden li:nth-child(5) {transform: translateX(-4.2rem) translateY(-5.2rem);}
+                  .fly.hidden li:nth-child(6) {transform: translateX(3.5rem) translateY(4.5rem);}
+                  .fly.hidden li:nth-child(7) {transform: translateX(5.2rem) translateY(-1.8rem);}
+                  
+
+     }
+
+.emoji
+{
+  height: 20rem;
+}
+
+/* /////////////////// for SVG /////// */
+
+  .main_svg_upper
+    {
+      background-color: #19c251;
+    }
+    .main_svg_lower
+    {
+       background-image: linear-gradient(to bottom,#4f4c4c , #d32626);
+        /*   width           : 120rem; */
+         
+    }
+
+
+/* ///////////////////// for scroll Up button ///////////////////////// */
+       html
+          {
+            scroll-behavior: smooth;
+          }
+
+        #scrollbtn
+          {
+            display: none;
+            position: fixed;
+            bottom: 3rem;
+            right: 4rem;
+            z-index: 99;
+            border: none;
+            color: white;
+            background-color: #00abff;
+            padding: 1rem;
+            border-radius: 1.6rem;
+          }
+
+          #scrollbtn:hover
+          {
+            background-color: #606060;
+          } 
+
+
+          .fa-heart:hover
+          {
+            color:  red;
+          } 
+    </style>
+  </head>
+  <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info mx-auto text-white ">
+        <a class="navbar-brand text-capitalize font-weight-bold ml-5  " href="#"><h1>Sougata <i class="fas fa-heart love_heart"></i> </h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ml-auto font-weight-bold mr-5 p-2">
+        <li class="nav-item active ">
+        <a class="nav-link" href="#"><h2 class="">Home</h2> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="order now.html"><h2>Order Now</h2></a>
+        </li>
+        <!--  <li class="nav-item">
+        <a class="nav-link" href="#"><h2>Sign UP</h2></a>
+        </li> -->
+        <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><h2>Log Out</h2></a>
+        </li>
+        </ul>
+        </div>
+        </nav>
+<!-- ///////////////////extra round shape under navbar //////////////// -->
+ <div class="hey">
+ <div class="  hey1">
+ </div> 
+ </div>
+<br>
+<!-- .................................................. -->
+<div class="row container-fluid text-info   ">
+  <div class="col-xs-12 col-12 col-md-3 col-xxl-3 ml-lg-5 ml-md-5 pl-lg-5">
+  <br>  
+         <div class=""><h1 class="text-center p-5">About Us 💆</h1></div>
+
+
+      <div class="col-10 col-xxl-8 mx-auto bg-success"><hr></div>
+
+            <div class=" py-3">
+              <h2 class="mx-auto" >Who am I ?</h2>
+              <h3 class="text-justify">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any
+              amount would help support and continue development on this project and is greatly appreciated.</h3>
+              <br>
+              <hr>
+              
+            
+                <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="down" title="click for more">
+          <h3>Know More ⁉</h3> 
+          </button>
+          </div>
+
+  </div>
+
+
+<div class="col-xs-12 col-12 col-md-7 col-xxl-7 m-auto mr-lg-5 mr-md-5">
+
+<!-- //////////// image slider start //////////////////////// -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://lorempixel.com/800/400/food/7" class="d-block w-100 img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://lorempixel.com/800/400/food/8" class="d-block w-100 img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://lorempixel.com/800/400/food/1" class="d-block w-100 img-fluid" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- //////////// image slider end //////////////////////// -->
+
+</div>
+</div>
+
+
+<!-- ............................................................ -->
+
+<!-- ////////////////// animated scroll start ///////////////////// -->
+<div class="row container-fluid">
+        <div class="col-12 col-md-7 col-lg-7 col-xxl-7 ml-md-5 m-lg-5">
+
+                <div class="container my-5 text-center">
+                    <h4 class="display-2">Animate Content on Scroll</h4>
+                </div>
+                <!--  -->
+                <div class="container">
+                    <h5 class="my-5 text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h5>
+                </div>
+                <!-- ///////////////first Div//////////////// -->
+                <div class="container h-15 ">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                          <h4 class="text-white">Featured</h4>  
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-text py-1">With supporting text below as a natural lead-in to additional content.</h6>
+                            <div class="mx-auto">
+                               <a href="#" class="btn btn-success py-1"><h5>Go somewhere</h5></a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ////////// 2nd Div starat///////////////// -->
+               <div class="container h-15 " data-aos="flip-right">
+                    <div class="card">
+                        <div class="card-header">
+                          <h4 class="text-dark">Featured</h4>  
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-text py-1">With supporting text below as a natural lead-in to additional content.</h6>
+                            <div class="mx-auto">
+                               <a href="#" class="btn btn-outline-primary py-1"><h5>Go somewhere</h5></a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ///////////////3rd Div//////////////// -->
+
+                 <div class="container h-15 " data-aos="fade-left">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                          <h4 class="text-white ">Featured</h4>  
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-text py-1">With supporting text below as a natural lead-in to additional content.</h6>
+                            <div class="mx-auto">
+                               <a href="#" class="btn btn-outline-info py-1"><h5>Go somewhere</h5></a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ///////////////4th Div//////////////// -->
+
+                 <div class="container h-15 " data-aos="fade-right">
+                    <div class="card">
+                        <div class="card-header bg-info">
+                          <h4 class="text-white">Featured</h4>  
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <h6 class="card-text py-1">With supporting text below as a natural lead-in to additional content.</h6>
+                            <div class="mx-auto">
+                               <a href="#" class="btn btn-outline-warning py-1"><h5>Go somewhere</h5></a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+<!-- //////////////////animated scroll bar col end////////// -->
+      </div>
+
+
+
+<!-- ............. About Us section Start ............... -->
+
+<div class="col-12 col-md-3 col-lg-3 col-xxl-3  my-auto mx-auto  p-4 text-white bg-dark">
+
+       <div class=""><h1 class="text-center">About Us </h1></div>
+
+
+      <div class="col-10 col-xxl-8 mx-auto bg-info"><hr></div>
+
+            <div class=" py-3">
+              <h2 class="mx-auto" >Who am I ?</h2>
+              <h3 class="text-justify">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any
+              amount would help support and continue development on this project and is greatly appreciated.</h3>
+              <br>
+              <hr>
+              
+            
+                <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="click for more">
+          <h3>Know More</h3> 
+          </button>
+          </div>
+
+
+</div>
+
+<!-- ///////////////// row end ///////////////////// -->
+</div>
+
+<!-- /////////////////// Fiy Text ///////////////////// -->
+<div class="row container mx-auto ">
+
+      <div class="col-12 col-md-12 col-lg-12 col-xxl-12 flybody">
+          <ul class="fly hidden">
+          <li>E</li>
+          <li>a</li>
+          <li>t</li>
+          <li>-</li>
+          <li>F</li>
+          <li><i class="fas fa-biking fa-1.7x"></i></li>
+          <li>D</li>
+          
+          </ul>
+      </div>
+  </div>
+
+<!-- /////////////////// Fiy Text End ///////////////////// -->
+
+
+
+
+
+<!-- <div class="main_svg_upper">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,0L24,10.7C48,21,96,43,144,48C192,53,240,43,288,42.7C336,43,384,53,432,90.7C480,128,528,192,576,213.3C624,235,672,213,720,181.3C768,149,816,107,864,112C912,117,960,171,1008,208C1056,245,1104,267,1152,250.7C1200,235,1248,181,1296,149.3C1344,117,1392,107,1416,101.3L1440,96L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+  </div>
+ -->
+
+  <div class="main_svg_lower  mb-5 pb-0 mx-auto mt-0 ">
+
+
+             
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,0L24,10.7C48,21,96,43,144,48C192,53,240,43,288,42.7C336,43,384,53,432,90.7C480,128,528,192,576,213.3C624,235,672,213,720,181.3C768,149,816,107,864,112C912,117,960,171,1008,208C1056,245,1104,267,1152,250.7C1200,235,1248,181,1296,149.3C1344,117,1392,107,1416,101.3L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+  </div>
+
+
+<!-- ////////////////////....jumbotron start....//////////////// -->
+        <div class="jumbotron jumboimg text-light container py-3 mt-0">
+        <h1 class="display-4">Hello, world!</h1>
+        <h3 class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</h3>
+        
+        <hr class="my-3 h-25">
+        
+        <h3>It uses utility classes for typography and spacing to space content out within the larger container.</h3>
+        <a class="btn btn-outline-success btn-lg text-light mt-2" href="#" role="button"><h2>Learn more</h2></a>
+        </div>
+
+<!-- ////////////////////....jumbotron end....//////////////// -->
+
+<!-- /////////// text area and image ZOOM section start //////////////////// -->
+<div class="row container mx-auto">
+
+  <!-- ////////////// Text area ////// -->
+  <div class="col-12 col-md-4 col-lg-4 col-xxl-4 m-auto  text-info">
+              
+                <div class="pt-5 mt-5">
+                  
+                  
+                <div class="col-10 col-xxl-8 mx-auto bg-success pr-2"><hr></div>
+                
+                <div class=" py-3 text-center">
+                <h2 class="mx-auto" >Some Information</h2>
+                <h3 class="text-justify">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any
+                amount would help support and continue development on this project and is greatly appreciated.</h3>
+                <br>
+               <div class="col-10 col-xxl-8 mx-auto bg-success"><hr></div>
+                
+                
+              
+                </div></div>
+  </div>
+
+  <!-- ////////////////////image ZOOM section start///////// -->
+    <div class="col-6 col-md-4 col-lg-4 col-xxl-4 m-auto mb-3 py-4">
+          <div class="zoomimage">
+          <img src="https://lorempixel.com/800/400/food/9" alt="">
+          <div class="overlay">
+          <div class="text">Hello Sir!!😋</div>
+          
+          </div>
+          </div>
+    </div>
+
+
+     <div class="col-6 col-md-4 col-lg-4 col-xxl-4">
+          <div class="zoomimage">
+          <img src="https://lorempixel.com/800/400/food/4" alt="">
+          <div class="overlay">
+          <div class="text">Hello Maam!!😋</div>
+          
+          </div>
+          </div>
+    </div>
+  
+</div>
+
+<!-- /////////// text area and image ZOOM section end //////////////////// -->
+
+<!-- ........................................//................ -->
+
+
+
+<!-- ................................. -->
+  <!-- ................................ Icon bar start ................ -->
+         <div class="row"> 
+          <div class="col-1 col-md-1 col-lg-1">
+
+
+                    <div class="icon-bar">
+                      <a href='https://www.facebook.com/sougata.sikdar.14/' class='facebook' target='_blank'>
+                        click here to visit <i class=" fab fa-facebook-square"></i>
+                      </a>
+                      <a href='https://twitter.com/' class='twitter' target='_blank'>
+                        click here to visit<i class=" fab fa-twitter-square"></i>
+                      </a>
+                      
+                      <a href='https://www.instagram.com' class='instagram' target='_blank'>
+                        click here to visit<i class="fab fa-instagram"></i>
+                      </a>
+                      <a href='https://www.linkedin.com/uas/login' class='linkedin' target='_blank'>
+                        click here to visit<i class=" fab fa-linkedin"></i>
+                      </a>
+                      <a href='https://www.youtube.com' class='youtube' target='_blank'>
+                      click here to visit<i class=" fab fa-youtube-square"></i></a>
+                    </div>
+
+
+             </div>
+
+         </div>    
+    <!-- .............................................. -->
+             <div class="col-12 col-md-12 col-lg-12 p-4">
+                              <div>
+                              <div class="ourservice_1 py-5">
+                                <div class="container-fluid">
+                                  <div class="row">
+                                    <div class="col-md-10 col-11 mx-auto ">
+                                      <div class="mt-2 mb-5 text-center">
+                                        <h1 class="ourservice_1_heading">OUR SERVICE <i class="fas fa-desktop"></i></h1>
+                                      </div>
+                                      <div class="row ">
+                                        <!-- left side data -->
+                                        <div class="col-md-6 mt-md-2 m-0 col-12 p-sm-0 ">
+                                          <span class="badge-info badge rounded-pill px-3 py-1 my-2 text-light font-weight-light">
+                                           <h7 class="text-white">What We Do</h7> 
+                                          </span>
+                                          <h4>Awesome with Extra Ordinary Flexibility Features</h4>
+                                          <h6 class="font-weight-light subtitle">You can relay on our amazing features list and also our customer ourservice_1s will be great experience for you without doubt and in no-time</h6>
+                                          <!-- one more grid sys for ourservices -->
+                                          <div class="row mt-md-5 mx-auto">
+                                            <div class="col-md-6 mt-3 ">
+                                              <h6 class="font-weight-medium">Indian Food 🍲</h6>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                              <h6 class="font-weight-medium">Chinese Food 🍲</h6>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                              <h6 class="font-weight-medium">Italian Food 🍲</h6>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                              <h6 class="font-weight-medium">Punjabi Style Food 🍲</h6>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            </div>
+                                            <div class="col-lg-12 my-4">
+                                              <a class="btn btn-sm btn-info " href="#"> check More </a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- right side data -->
+                                        <div class="col-md-6 mt-md-5 m-0">
+
+                                          <div class="row wrap-ourservice_1">
+                                            <!-- left side images -->
+                                            <div class="col-md-6">
+                                              <div class="row">
+                                                <div class="col-md-12 img-hover mb-4">
+                                                  <img alt="ux" class="rounded img-shadow img-fluid ourservice_images" src="https://lorempixel.com/800/400/food/6" />
+                                                </div>
+                                                <div class="col-md-12 img-hover mb-4">
+                                                  <img alt="ux" class="rounded img-shadow img-fluid" src="https://lorempixel.com/800/400/food/2" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- right side images -->
+                                            <div class="col-md-6 uneven-box">
+
+                                               
+
+                                      <div class="row">
+                                                <div class="col-md-12 img-hover mb-4">
+                                                  <img alt="ux" class="rounded img-shadow img-fluid" src="https://lorempixel.com/800/400/food/1" />
+                                                </div>
+                                                <div class="col-md-12 img-hover mb-4">
+                                                  <img alt="ux" class="rounded img-shadow img-fluid" src="https://lorempixel.com/800/400/food/7" />
+                                                 </div>
+                                       </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+</div>
+
+<!-- //////////////////////// contact us ////////////////////////////// -->
+<div class="row  container mx-auto">
+  <div class="col-12 col-md-4 col-lg-4 col-xxl-4 emojidiv"> 
+
+    <div class=""><h1 class="text-center p-1   emoji"><i class="fas fa-hamburger fa-5x"></i> </h1></div>
+    <div class=""><h1 class="text-center p-1 mt-2  emoji"><i class="fas fa-hamburger fa-utensils fa-5x"></i> </h1></div>
+     <div class=""><h1 class="text-center p-1 mt-2 mb-0 emoji"><i class="fas fa-hamburger fas fa-handshake fa-5x"></i> </h1></div>
+
+
+  </div>
+<!-- ............................................. -->
+  <div class="col-12 col-md-8 col-lg-8 col-xxl-8">
+    <div class="col-12 col-xxl-12 "><hr></div>
+<div class=""><h1 class="text-center font-weight-light p-3 m-3 ">Sign Up 💁</h1></div>
+
+
+  <div class="col-12 col-xxl-12  bg-light mb-3"><hr></div>
+
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-10 mb-4">
+      <label for="validationTooltip01"><h3>First name</h3></label>
+      <input type="text" class="form-control" id="validationTooltip01" value="" required placeholder="Your First Name">
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-10 mb-4">
+      <label for="validationTooltip02"><h3>Last name</h3></label>
+      <input type="text" class="form-control" id="validationTooltip02" value="" required placeholder="Your Last Name">
+      
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-4">
+      <label for="validationTooltip03"><h3>D.O.B</h3></label>
+      <input type="text" class="form-control" id="date" required placeholder="Your's Date of Birth">
+      
+    </div>
+
+
+           <div class="form-row">
+            <div class="col-md-6 mb-4">
+            <label for="phone"><h3>Phone Number:</h3></label>
+            <input type="text" class="form-control" id="phone" required placeholder="Your's Phone Number"  onclick="validate1()" >
+            <label for="" id="phonelabel" style="color: red; visibility: hidden">Invalid</label>
+            </div>
+            </div>
+           
+            
+            <div class="form-row">
+            <div class="col-md-6 mb-4">
+            <label for="email"><h3>Email:</h3></label>
+            <input type="text" class="form-control" id="email" required placeholder="Your's Email" >
+            <label for="" id="emaillabel" style="color: red; visibility: hidden">Invalid</label>
+            </div>
+            </div>
+
+
+    </div>
+            <div class="form-row">
+            <div class="col-md-6 mb-4">
+            <label for="city"><h3>City</h3></label>
+            <input type="text" class="form-control" id="city" required placeholder="Your's City">
+            
+            </div>
+
+
+  </div>
+</form>
+
+
+
+
+  
+ <div class="form-check mb-2 mr-sm-2">
+    <input class="form-check-input" type="checkbox" id="inlineFormCheck" onclick="validate()">
+    <label class="form-check-label" for="inlineFormCheck">
+      <h5>Agree Terms and Conditions</h5>
+    </label>
+  </div>
+<!-- .............................................................. -->
+<form>
+ <br>
+  <button class="btn btn-outline-info" type="submit"><h3>Sign Up</h3> <i class="fas fa-share"></i></button>
+</form>
+<br>
+</div>
+</div>
+
+<script>
+ var somecities = ["mumbai","Delhi","Kolkata","Chennai","Pune","Indore","patna","Kashmir","kalyani","kanchrapara"];
+        // var somestates = ["west bengal","Delhi","Bihar","UP"];
+      
+     $(document).ready(function(){
+
+        
+        // $('#myid').accordion({
+        //   Collapsible:true,
+        //   active:1,
+        //   animate: 4000,
+        //   event:"mouseover",
+        //   heightStyle:true
+        // })
+
+    $("#date").datepicker({
+              numberOfMonths:3,
+              changeYear:true,
+              changeMonth:true
+              })
+              
+              
+              $("#city").autocomplete(
+              {source:somecities},{
+              
+              autoFocus:true,
+              // delay:1000,
+              minLength:2
+                            
+              })
+      
+
+                          $("#select_state").autocomplete({source:somestates},
+                              {
+                                  autoFocus:true,
+                                  minLength:2
+                              })
+      });
+
+</script>
+
+<script>
+
+
+      ///////////////// for mobile///////////////////////////////////
+      function validate1()
+      {
+        var phone1 = document.getElementById("phone").value;
+
+        var regx= /^[6-9][0-9]{9}$/;
+
+        if (regx.test(phone1)) 
+        {
+
+          document.getElementById("phonelabel").innerHTML="valid";
+
+          document.getElementById("phonelabel").style.visibility = "visible";
+          document.getElementById("phonelabel").style.color = "green";
+
+
+        }
+
+        else {
+          document.getElementById("phonelabel").innerHTML="invalid";
+          document.getElementById("phonelabel").style.visibility = "visible";
+          document.getElementById("phonelabel").style.color = "red";
+        }
+      }
+    
+      
+
+      ///////////////// for mobile///////////////////////////////////
+
+      function validate()
+      {
+        var email1 = document.getElementById("email").value;
+
+        var regx1= /^([a-z 0-9\.-]+)@([a-z 0-9 -]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+
+        if (regx1.test(email1)) 
+        {
+
+          document.getElementById("emaillabel").innerHTML="valid";
+
+          document.getElementById("emaillabel").style.visibility = "visible";
+          document.getElementById("emaillabel").style.color = "green";
+
+
+        }
+
+        else {
+          document.getElementById("emaillabel").innerHTML="invalid";
+          document.getElementById("emaillabel").style.visibility = "visible";
+          document.getElementById("emaillabel").style.color = "red";
+        }
+      }
+    </script>
+
+    <!-- ...............................Footer staret.../////////////////////////////............ -->
+
+                      <div>
+                  <footer class="footer_style mt-3">
+                  <main class="container-fluid">
+                   <div class="row p-3">
+                    <div class="col-md-5 col-12 col-lg-5 col-xxl-5 offset-md-1"> 
+                     <h4 class="mt-5 text-justify mr-auto"> Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.
+                  Currently v4.5.2. The Bootstrap Blog is open source under the MIT license. </h4>
+                     <h4 class="text-capitalize p-4"> &#169 2020 by <i class="fas fa-heart text-warning"></i> sougata sikdar. All right reserved. </h4>
+                    </div>
+
+                    <div class="col-md-4 col-8 mt-4 mt-sm-5 pt-md-0 p-4">
+                      <h2>Contacts</h2>
+                                <dl>
+                                  <dt><h3 class="pt-2"><i class="fas fa-map-marker-alt"></i> Address:</h3></dt>
+                                  <dd><h4>Kolkata, WestBengal </h4></dd>
+                                </dl>
+                                <dl>
+                                  <dt><h3 class="pt-2"><i class="fas fa-envelope"></i> email:</h3></dt>
+                                  <dd><h4><a href="mailto:thapa@thapa.com" >sougata.sikdar1997@mail.com</a></h4></dd>
+                                </dl>
+                                <dl>
+                                  <dt><h3 class="pt-2"><i class="fas fa-phone"></i> phones:</h3></dt>
+                                  <dd><h4><a href="tel:#">+91 1234567898</a> <span>or</span> <a href="tel:#">+91 8697000000</a></h4>
+                                  </dd>
+                                </dl>
+                    </div>
+
+                    <div class="col-md-2 col-3 mt-4  mt-sm-5 pt-md-0 p-4">
+                     <h2 class="pb-2">Links</h2>
+                                <ul>
+                                  <li><h4><a href="https://www.sougatasikdar.com/">Services</a></h4></li>
+                                  <li><h4><a href="#">Portfolio</a></h4></li>
+                                  <li><h4><a href="#">Blog</a></h4></li>
+                                  <li><h4><a href="#">Contacts</a></h4></li>
+                                  <li><h4><a href="#">About</a></h4></li>
+                                </ul>
+                    </div>
+                   </div>
+
+                   <div class="d-flex flex-row justify-content-center align-items-center flex-wrap sougata">
+
+                     <div class="p-md-5 p-5 flex-fill "><h3><a href="https://www.facebook.com/sougata.sikdar.14/" target='_blank'> <i class="fab fa-facebook-square"></i> <span>  Facebook</span> </a></h3> </div>
+
+                     <div class="p-md-5 p-3 flex-fill "><h3><a href="https://www.instagram.com/" target='_blank'><i class="fab fa-instagram"></i><span>  Instagram</span></a></h3></div>
+
+                     <div class="p-md-5 p-3 flex-fill "><h3><a href="https://twitter.com/" target='_blank'><i class="fab fa-twitter"></i><span>  Twitter</span></a></h3></div>
+
+                     <div class="p-md-5 p-5 flex-fill "><h3><a href="https://www.youtube.com/" target='_blank'><i class="fab fa-youtube"></i><span> Youtube</span></a></h3></div>
+                    
+                   </div>
+                  </main>
+                  </footer>
+                  </div>
+
+
+</div>
+<!-- .................................................. -->
+
+<!-- //////////////////////////Scroll up button  start here /////////////////////////////////// -->
+<div class="scrolltop float-right">
+     <i class="fas fa-arrow-up " onclick="topFun()" id="scrollbtn"></i>
+    
+  </div>
+
+<!-- ////////////////////// whole row //////////////////////////////// -->
+</div>
+
+
+  <script>
+    mybutton=document.getElementById("scrollbtn");
+
+    window.onscroll=function()
+                          {
+                            scrollFun()
+                          };
+
+    function scrollFun()
+    {
+      if(document.body.scrollTop>20 || document.documentElement.scrollTop>20)
+      {
+        mybutton.style.display ="block";
+      }
+      else
+      {
+        mybutton.style.display ="none";
+      }
+      
+    }
+
+
+
+     function topFun()
+     {
+      /////////////for safari////////////////
+      document.body.scrollTop=0;
+
+      // ..............for chrome..........................
+      document.documentElement.scrollTop=0;
+     }
+  </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+
+
+     <!-- our aos data -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+
+
+        //////////// for tool tip /////
+
+
+          $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+              })
+
+
+
+
+
+</script>
+
+<script type="text/javascript" charset="utf-8" async defer>
+  $(function(){
+    setTimeout(function(){
+      $(".fly").removeClass('hidden')
+    },1000);
+  })();
+        </script>
+
+  </body>
+
+</html>  
