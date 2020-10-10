@@ -968,7 +968,7 @@ html
   <div class="form-row">
     <div class="col-md-6 mb-4">
       <label for="validationTooltip03"><h3>D.O.B</h3></label>
-      <input type="text" class="form-control" id="date" required placeholder="Your's Date of Birth">
+      <input type="text" class="form-control" id="date" required placeholder="dd-mm-yy">
       
     </div>
 
@@ -1029,18 +1029,15 @@ html
      $(document).ready(function(){
 
         
-        // $('#myid').accordion({
-        //   Collapsible:true,
-        //   active:1,
-        //   animate: 4000,
-        //   event:"mouseover",
-        //   heightStyle:true
-        // })
+       
 
     $("#date").datepicker({
               numberOfMonths:3,
               changeYear:true,
-              changeMonth:true
+              changeMonth:true,
+              minDate: new Date(1994,0,1),
+              maxDate: new Date(2014,12,31),
+              dateFormat: "dd-mm-yy"
               })
               
               
